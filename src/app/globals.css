@@ -1,0 +1,96 @@
+:root {
+  --bg: #fff;
+  --text: #111;
+  --muted: #555;
+  --mark: #ffeb3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.search-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 14px 45px 14px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+}
+
+.count {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.results {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.post h2 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.excerpt {
+  color: #333;
+  line-height: 1.5rem;
+}
+
+mark {
+  background: var(--mark);
+  padding: 2px;
+}
